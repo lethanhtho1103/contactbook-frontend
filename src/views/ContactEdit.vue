@@ -20,6 +20,7 @@ export default {
   props: {
     id: { type: String, required: true },
   },
+
   data() {
     return {
       contact: null,
@@ -62,6 +63,7 @@ export default {
       }
     },
   },
+
   created() {
     this.getContact(this.id);
     this.message = "";
